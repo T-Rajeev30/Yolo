@@ -1,0 +1,5 @@
+#source yolo8env/bin/activate -- in terminal 
+
+cvzone==1.6.1
+ultralytics==8.3.144
+cv2

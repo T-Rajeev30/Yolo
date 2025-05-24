@@ -8,14 +8,37 @@ A project implementing the YOLO (You Only Look Once) object detection algorithm.
 - High accuracy and speed
 - Easy to use and customize
 
-## Installation
+## Prerequisites
 
-```bash
-git clone https://github.com/yourusername/Yolo.git
-cd Yolo
-# Install dependencies
-pip install -r requirements.txt
-```
+- Python 3.x installed on your system
+
+## Installation & Setup
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/yourusername/Yolo.git
+    cd Yolo
+    ```
+
+2. **Create a virtual environment** (recommended):
+
+    ```bash
+    python3 -m venv yolo8env
+    source yolo8env/bin/activate
+    ```
+
+3. **Install dependencies**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    > **Note:**  
+    > The `requirements.txt` includes:
+    > - `cvzone==1.6.1`
+    > - `ultralytics==8.3.144`
+    > - `cv2` (Install via `opencv-python` if you encounter issues)
 
 ## Usage
 
@@ -28,6 +51,17 @@ python detect.py --image path/to/image.jpg
 - `detect.py` - Main detection script
 - `models/` - Pretrained YOLO models
 - `data/` - Sample images and datasets
+
+## Additional Notes
+
+- If you get errors related to `cv2`, install it using:
+  ```bash
+  pip install opencv-python
+  ```
+- Activate your environment each time before running scripts:
+  ```bash
+  source yolo8env/bin/activate
+  ```
 
 ## Contributing
 
