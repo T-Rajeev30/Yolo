@@ -3,10 +3,16 @@ from ultralytics import YOLO
 import cvzone 
 import math
 
-cap = cv2.VideoCapture(0)
-cap.set(3,1280)
-cap.set(4,720)
+## to check whether the file exist or not 
+#import os
+#print(os.path.exists("./Videos/bikes.mp4"))
 
+
+#cap = cv2.VideoCapture(0)
+#cap.set(3,1280)
+#cap.set(4,720)
+
+cap = cv2.VideoCapture("./Videos/bikes.mp4")
 
 model = YOLO("../YoloWeights/yolov8l.pt")
 classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
