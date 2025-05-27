@@ -40,7 +40,7 @@ while True:
             
             #class name 
             cls = int(box.cls[0])
-            cvzone.putTextRect(img, f'{classNames[cls]} {conf}' , (max(0 ,x1), max(35 , y1)) ,scale=0.7 , thickness=1)
+            cvzone.putTextRect(img, f'{classNames[cls]} {conf}' , (max(0 ,x1), max(35 , y1)) ,scale=3 , thickness=3)
 
 
     cv2.imshow("Image", img)
